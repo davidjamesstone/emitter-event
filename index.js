@@ -1,11 +1,11 @@
-module.exports = function EmitterEvent(name, target, value) {
+module.exports = function EmitterEvent(name, target, detail) {
   var e = {
     name: name,
     target: target
   };
 
-  if (value) {
-    e.value = value;
+  if (detail) {
+    e.detail = detail;
   }
 
   return e;
